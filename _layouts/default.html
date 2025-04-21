@@ -5,14 +5,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }} | {{ site.title }}</title>
+
+  </head>
+  <body>
+
+
+    <header>
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    </header>
+    <main>
+      {% assign paragraphs = content | split: '</p>' %}
+      {% for p in paragraphs %}
+        {{ p }}</p>
+        {% if forloop.index == paragraphs.size | divided_by: 2 %}
+
+        {% endif %}
+      {% endfor %}
+    </main>
+
+
+<!--
+    <footer>
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+    </footer>
+-->
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} | {{ site.title }}</title>
     <!-- Google AdSense 코드 -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9220247113939571"
     crossorigin="anonymous"></script>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9fafb;
+        color: #333;
+      }
+      header {
+        background-color: #0d47a1;
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      header h1 a {
+        color: white;
+        text-decoration: none;
+        font-size: 2rem;
+      }
+      main {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        line-height: 1.7;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        border-radius: 0.5rem;
+        padding: 2rem;
+      }
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #777;
+        margin-top: 3rem;
+        padding: 2rem;
+      }
+      ins.adsbygoogle {
+        display: block;
+        margin: 2rem 0;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <!-- github-디스플레이 광고 상단 -->
     <ins class="adsbygoogle"
-        style="display:block; text-align:center; margin: 1rem 0;"
+        style="display:block; text-align:center;"
         data-ad-client="ca-pub-9220247113939571"
         data-ad-slot="4243015229"
         data-ad-format="auto"
@@ -31,7 +109,7 @@
         {% if forloop.index == paragraphs.size | divided_by: 2 %}
           <!-- 인아티클 광고 삽입 위치 -->
           <ins class="adsbygoogle"
-              style="display:block; text-align:center; margin: 2rem 0;"
+              style="display:block; text-align:center;"
               data-ad-layout="in-article"
               data-ad-format="fluid"
               data-ad-client="ca-pub-9220247113939571"
@@ -45,7 +123,7 @@
 
     <!-- github-디스플레이광고 하단 -->
     <ins class="adsbygoogle"
-        style="display:block; text-align:center; margin: 2rem 0;"
+        style="display:block; text-align:center;"
         data-ad-client="ca-pub-9220247113939571"
         data-ad-slot="1123848120"
         data-ad-format="auto"
@@ -53,10 +131,9 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-<!--
+
     <footer>
       <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
     </footer>
--->
   </body>
 </html>
