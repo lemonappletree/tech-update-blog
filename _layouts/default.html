@@ -60,11 +60,11 @@
     </style>
   </head>
   <body>
+    {% unless page.url == '/' or page.layout == 'home' %}
     <header>
-      {% if page.layout != "home" %}
         <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      {% endif %}
     </header>
+    {% endunless %}
 
     <!-- 상단 반응형 광고 (헤더 아래 본문 위로 이동) -->
     <div class="top-ad">
@@ -83,9 +83,10 @@
     <main>
       {% if page.layout == "post" %}
         {% assign paragraphs = content | split: '</p>' %}
+        {% assign midpoint = paragraphs.size | divided_by: 2 %}
         {% for p in paragraphs %}
-          {{ p }}</p>
-          {% if forloop.index == paragraphs.size | divided_by: 2 %}
+          {% assign index = forloop.index0 %}
+          {% if index == midpoint %}
             <!-- 인아티클 광고 삽입 위치 -->
             <ins class="adsbygoogle"
                 style="display:block; text-align:center;"
@@ -97,6 +98,7 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
           {% endif %}
+          {{ p }}</p>
         {% endfor %}
       {% else %}
         {{ content }}
