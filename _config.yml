@@ -1,0 +1,7 @@
+title: 'Tech Update Blog'
+author:
+  name: 'YJ SON'
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
