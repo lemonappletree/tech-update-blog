@@ -21,6 +21,9 @@
         padding: 1.5rem;
         text-align: center;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
       }
       header h1 a {
         color: white;
@@ -52,6 +55,10 @@
     </style>
   </head>
   <body>
+    <header>
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    </header>
+
     <!-- github-디스플레이 광고 상단 -->
     <ins class="adsbygoogle"
         style="display:block; text-align:center;"
@@ -62,27 +69,27 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-
-    <header>
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-    </header>
     <main>
-      {% assign paragraphs = content | split: '</p>' %}
-      {% for p in paragraphs %}
-        {{ p }}</p>
-        {% if forloop.index == paragraphs.size | divided_by: 2 %}
-          <!-- 인아티클 광고 삽입 위치 -->
-          <ins class="adsbygoogle"
-              style="display:block; text-align:center;"
-              data-ad-layout="in-article"
-              data-ad-format="fluid"
-              data-ad-client="ca-pub-9220247113939571"
-              data-ad-slot="4350826430"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        {% endif %}
-      {% endfor %}
+      {% if page.layout == "post" %}
+        {% assign paragraphs = content | split: '</p>' %}
+        {% for p in paragraphs %}
+          {{ p }}</p>
+          {% if forloop.index == paragraphs.size | divided_by: 2 %}
+            <!-- 인아티클 광고 삽입 위치 -->
+            <ins class="adsbygoogle"
+                style="display:block; text-align:center;"
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-ad-client="ca-pub-9220247113939571"
+                data-ad-slot="4350826430"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        {{ content }}
+      {% endif %}
     </main>
 
     <!-- github-디스플레이광고 하단 -->
