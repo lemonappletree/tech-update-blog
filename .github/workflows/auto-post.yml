@@ -21,6 +21,8 @@ jobs:
         run: pip install openai feedparser python-frontmatter
 
       - name: Generate tech post
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python3 scripts/generate_post.py
 
       - name: Commit & Push
