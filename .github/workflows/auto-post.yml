@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * *'  # 매일 09:00 KST
   workflow_dispatch:
 
+permissions:
+  contents: write   # <-- 요거 추가!
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,8 +30,13 @@ jobs:
 
       - name: Commit & Push
         run: |
-          git config user.name 'github-actions'
-          git config user.email 'github-actions@github.com'
+          # git config user.name 'github-actions'
+          # git config user.email 'github-actions@github.com'
+          # git add _posts/*.md
+          # git commit -m 'Auto tech post update'
+          # git push
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add _posts/*.md
-          git commit -m 'Auto tech post update'
-          git push
+          git commit -m 'Auto tech post update' || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
