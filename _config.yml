@@ -5,3 +5,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+include:
+  - sitemap.xml
+  - robots.txt
