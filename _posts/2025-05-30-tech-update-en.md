@@ -1,0 +1,26 @@
+# 🛠️ 2025-05-30 Tech Update Summary
+
+## 🔹 Kubernetes - Kubernetes v1.33: In-Place Pod Resize Graduated to Beta
+The blog post announces that the in-place Pod resize feature, also known as In-Place Pod Vertical Scaling, has graduated from alpha to beta and will be enabled by default in Kubernetes v1.33. This feature allows users to adjust CPU and memory resources for running Pods without needing to restart them, which is particularly beneficial for stateful applications, batch jobs, and workloads sensitive to restarts. This advancement in resource management offers reduced disruption, improved resource utilization, and faster scaling capabilities. The post outlines the changes and improvements made from alpha to beta, including the introduction of a `resize` subresource for modifying Pod resources, improved checkpointing and state tracking, and enhanced CRI integration. The community is focused on further stabilizing the feature, integrating it with the VerticalPodAutoscaler, and gathering user feedback. Users are encouraged to try out the feature and provide feedback through the standard Kubernetes communication channels.
+👉 [Read more](https://kubernetes.io/blog/2025/05/16/kubernetes-v1-33-in-place-pod-resize-beta/)
+
+## 🔹 Spring Boot - Spring Cloud 2025.0.0 (aka Northfields) has been released
+The blog post announces the release of Spring Cloud 2025.0.0, also known as Northfields. This version is now generally available and can be found in Maven Central. It is compatible with Spring Boot 3.5.0, and the release notes are available for more details. Notable changes include updates to Spring Cloud Gateway, such as support for Spring Cloud Function and Stream handlers, a new Bucket4jRateLimiter, and deprecated names for modules and starters. It also introduces revised property prefixes and changes to the handling of `X-Forwarded-*` and `Forwarded` headers. Other updates involve Spring Cloud Config, supporting YAML profile documents in AWS S3, and Spring Cloud Kubernetes, which now uses Kubernetes as a composite config source. The update also includes a breaking change with the upgrade to Fabric8 7.3.1. Additionally, Spring Cloud Circuitbreaker now supports reactive bulkheads, and Spring Cloud Netflix allows customizing Apache HTTP Client 5 `RequestConfig`. The post lists the updated modules and their versions, and includes instructions for setting up the new release with Maven and Gradle. Feedback is welcomed via GitHub, Gitter, Stack Overflow, and X.
+👉 [Read more](https://spring.io/blog/2025/05/29/spring-cloud-2025-0-0-is-abvailable)
+
+## 🔹 Docker - Introducing Docker Hardened Images: Secure, Minimal, and Ready for Production
+The blog post titled "Introducing Docker Hardened Images: Secure, Minimal, and Ready for Production" discusses Docker's new offering of Hardened Images. Docker has always aimed to help developers efficiently and securely build, share, and run software. With Docker Hub facilitating global software delivery, hosting over 14 million images and managing more than 11 billion pulls each month, Docker has a unique insight into modern software development practices. The introduction of Docker Hardened Images focuses on enhancing security, minimizing vulnerabilities, and ensuring that images are production-ready, reflecting Docker's commitment to secure and efficient software management.
+👉 [Read more](https://www.docker.com/blog/introducing-docker-hardened-images/)
+
+## 🔹 Java - The Inside Java Newsletter: Java’s 30th Birthday &amp; JavaOne!
+The Inside Java Newsletter for May 2025 marks Java's 30th anniversary and begins sharing content from JavaOne 2025. This edition includes podcast interviews, community news, and the latest technical videos to keep developers informed about Java's advancements. Additionally, there will be more information in future issues about a new website dedicated to teaching Java to students and teachers. Produced by the Java Developer Relations team, the newsletter showcases technical content from the Java Platform Group. Readers are encouraged to explore the archives, subscribe, and share with others.
+👉 [Read more](https://inside.java/2025/05/28/inside-java-newsletter/)
+
+## 🔹 Golang - Go Cryptography Security Audit
+The tech blog post titled "Go Cryptography Security Audit" discusses the security audit conducted by Trail of Bits on Go's cryptography libraries. The audit aimed to assess the security and robustness of these libraries, ensuring they meet high standards for cryptographic practices and implementation. The post likely details the findings of the audit and any recommendations or improvements suggested by Trail of Bits to enhance the security of Go's cryptographic components.
+👉 [Read more](https://go.dev/blog/tob-crypto-audit)
+
+## 🔹 Helm - Helm @ KubeCon + CloudNativeCon EU '25
+The blog post announces that the Helm team will be attending KubeCon + CloudNativeCon EU 2025 in London from April 1 to 4. They will be discussing the upcoming release of Helm 4, and attendees are encouraged to engage with the team during talk sessions and visit the Helm booth in the Project Pavilion. The post provides more details on Helm-related activities happening throughout the week.
+👉 [Read more](https://helm.sh/blog/helm-at-kubecon-eu-25/)
+
