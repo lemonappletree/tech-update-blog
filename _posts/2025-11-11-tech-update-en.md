@@ -1,0 +1,22 @@
+# 🛠️ 2025-11-11 Tech Update Summary
+
+## 🔹 Kubernetes - Announcing the 2025 Steering Committee Election Results
+The blog post announces the results of the 2025 Kubernetes Steering Committee election, where four of the seven seats were up for election. The elected members, serving two-year terms, are Kat Cosgrove, Paco Xu, Rita Zhang, and Maciej Szulik. They join continuing members Antonio Ojea, Benjamin Elder, and Sascha Grunert. The post thanks election officers and emeritus members for their contributions and encourages community involvement in the Steering Committee, which governs the Kubernetes project. The committee holds open meetings monthly, and the community can engage through meeting notes, issues, and pull requests.
+👉 [Read more](https://kubernetes.io/blog/2025/11/09/steering-committee-results-2025/)
+
+## 🔹 Spring Boot - LLM Response Evaluation with Spring AI: Building LLM-as-a-Judge Using Recursive Advisors
+The blog post discusses the use of Large Language Models (LLMs) as evaluators, or "judges," for assessing AI-generated content. Traditional methods like ROUGE and BLEU metrics are inadequate for evaluating the nuanced responses of modern LLMs. Human evaluation, while accurate, is costly and not scalable. The post introduces the concept of "LLM-as-a-Judge," where LLMs are used to score, classify, or compare AI outputs based on predefined criteria, achieving up to 85% alignment with human judgment. The article explores how Spring AI's Recursive Advisors provide a framework for implementing this evaluation method, allowing for automated quality control and self-improvement in AI systems. It explains two primary evaluation patterns: direct assessment and pairwise comparison, and highlights the benefits of using dedicated LLM-as-a-Judge models over general-purpose models. The post provides a detailed example of implementing a SelfRefineEvaluationAdvisor using Spring AI, which automatically evaluates and retries AI responses based on feedback until a quality threshold is met. Key features include recursive pattern implementation, structured evaluation output, and feedback-driven improvement. The blog concludes with practical advice for integrating LLM-as-a-Judge patterns into AI applications, emphasizing the importance of using dedicated judge models, mitigating bias, and ensuring deterministic results.
+👉 [Read more](https://spring.io/blog/2025/11/10/spring-ai-llm-as-judge-blog-post)
+
+## 🔹 Docker - Help Define the Future of Development – Take the Docker State of Application Development Survey 2025
+The blog post invites readers to participate in the fourth annual Docker State of Application Development survey. By dedicating just 20 minutes, participants can help Docker understand the current focuses, projects, and priorities within the application development community. The feedback collected will guide Docker in improving its services and support for developers.
+👉 [Read more](https://www.docker.com/blog/state-of-application-development-survey-2025/)
+
+## 🔹 Java - Serialization 2 0: A Marshalling Update!
+The blog post discusses the evolution of Java Serialization, a feature that has been criticized over the years. It highlights how application requirements for object externalization have changed significantly since Java Serialization's inception nearly three decades ago. The presentation outlines how modern enhancements in the Java language, along with a more straightforward division of responsibilities, can lead to a simpler and safer model for understanding object structures. These changes offer greater flexibility in state extraction, versioning, encoding, and reconstruction, while supporting a wider range of wire formats.
+👉 [Read more](https://inside.java/2025/11/10/devoxxbelgium-serialization2-0-marshalling-update/)
+
+## 🔹 Golang - The Green Tea Garbage Collector
+The blog post discusses the introduction of a new experimental garbage collector called Green Tea in Go version 1.25. This new garbage collector is designed to enhance performance and efficiency in memory management. The post likely elaborates on the features and benefits of Green Tea, its impact on the Go programming language, and how it differs from or improves upon previous garbage collection methods. The link provided leads to the official Go blog for further details.
+👉 [Read more](https://go.dev/blog/greenteagc)
+
