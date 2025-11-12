@@ -1,0 +1,22 @@
+# 🛠️ 2025-11-12 Tech Update Summary
+
+## 🔹 Kubernetes - Announcing the 2025 Steering Committee Election Results
+The 2025 Kubernetes Steering Committee election has concluded, with four of the seven seats up for election. The elected members, serving a two-year term, are Kat Cosgrove (Minimus), Paco Xu (DaoCloud), Rita Zhang (Microsoft), and Maciej Szulik (Defense Unicorns). They join continuing members Antonio Ojea (Google), Benjamin Elder (Google), and Sascha Grunert (Red Hat). The election was a community effort, supported by election officers Christoph Blecker, Nina Polshakova, and Sreeram Venkitesh. Appreciation was also extended to emeritus members Stephen Augustus and Patrick Ohly. The Steering Committee governs the Kubernetes project, and their meetings are open to the public, with opportunities for community involvement.
+👉 [Read more](https://kubernetes.io/blog/2025/11/09/steering-committee-results-2025/)
+
+## 🔹 Spring Boot - LLM Response Evaluation with Spring AI: Building LLM-as-a-Judge Using Recursive Advisors
+The tech blog post titled "LLM Response Evaluation with Spring AI: Building LLM-as-a-Judge Using Recursive Advisors" discusses the challenges in evaluating outputs from Large Language Models (LLMs), which are crucial for AI applications in production. Traditional metrics like ROUGE and BLEU are inadequate for these nuanced outputs, and human evaluation is costly and unscalable. The post introduces "LLM-as-a-Judge," a technique where LLMs evaluate the quality of AI-generated content. Research indicates these models can align with human judgment up to 85%, surpassing human-to-human agreement rates. The article explores how Spring AI's Recursive Advisors offer a framework for implementing this technique, enabling self-improving AI systems with automated quality control. It highlights two main evaluation patterns: Direct Assessment and Pairwise Comparison, and discusses the advantages of using dedicated LLM-as-a-Judge models over general-purpose models. The post provides a detailed implementation example using Spring AI's API, showcasing the SelfRefineEvaluationAdvisor, which iteratively improves AI responses based on evaluation feedback. The blog concludes by emphasizing the benefits of automated quality control, bias mitigation, and integration with Spring AI applications, while noting the experimental nature of Recursive Advisors in Spring AI.
+👉 [Read more](https://spring.io/blog/2025/11/10/spring-ai-llm-as-judge-blog-post)
+
+## 🔹 Docker - Docker Engine v29: Foundational Updates for the Future
+The blog post discusses Docker Engine v29, which is a foundational release aimed at setting the stage for the future of the Docker platform. This update is specifically for Linux users running Docker Engine (Community Edition) directly on their hosts. Docker Desktop users do not need to take any action as updates are automatically included in future releases of Docker Desktop. The post likely elaborates on the new features and improvements introduced in this version, although the provided summary does not give specific details.
+👉 [Read more](https://www.docker.com/blog/docker-engine-version-29/)
+
+## 🔹 Java - Serialization 2 0: A Marshalling Update!
+The tech blog post titled "Serialization 2.0: A Marshalling Update!" discusses the evolution of Java Serialization over the past three decades. The post highlights how Java Serialization, a feature often criticized, has seen changing requirements and constraints for object externalization. The presentation focuses on recent enhancements in the Java language that, along with a clearer division of responsibilities, pave the way for a simpler and safer model for understanding object structures. It offers improved flexibility in state extraction, versioning, encoding, and reconstruction, while supporting a wide range of wire formats.
+👉 [Read more](https://inside.java/2025/11/10/devoxxbelgium-serialization2-0-marshalling-update/)
+
+## 🔹 Golang - The Green Tea Garbage Collector
+In the blog post titled "The Green Tea Garbage Collector," it is announced that Go 1.25 introduces a new experimental garbage collector called Green Tea. This addition aims to improve the efficiency and performance of memory management in Go applications. The post likely discusses the benefits of the Green Tea garbage collector, its implementation details, and its potential impact on Go developers. For more information, readers are directed to visit the Go blog link provided.
+👉 [Read more](https://go.dev/blog/greenteagc)
+
