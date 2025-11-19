@@ -1,0 +1,22 @@
+# 🛠️ 2025-11-19 Tech Update Summary
+
+## 🔹 Kubernetes - Ingress NGINX Retirement: What You Need to Know
+The blog post announces the upcoming retirement of Ingress NGINX by Kubernetes SIG Network and the Security Response Committee to ensure ecosystem safety. Maintenance will continue until March 2026, after which there will be no more updates or bug fixes. Existing deployments will still function, and installation artifacts will remain available. Users are encouraged to migrate to alternatives, such as the Gateway API, the modern replacement for Ingress, or other Ingress controllers listed in the Kubernetes documentation. Ingress NGINX was a popular and flexible Ingress controller, but faced maintenance challenges due to limited support. The project will be retired in March 2026, and users should begin migration to ensure ongoing support and security.
+👉 [Read more](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/)
+
+## 🔹 Spring Boot - OpenTelemetry with Spring Boot
+The blog post titled "OpenTelemetry with Spring Boot" is part of the "Road to GA series" and explores integrating OpenTelemetry with Spring Boot to enhance observability in cloud-native architectures. OpenTelemetry, an open-source framework backed by the Cloud Native Computing Foundation, provides a vendor-neutral way to collect, process, and export telemetry data using its API and SDK. The post discusses how Spring Boot can utilize OpenTelemetry through different integration paths, such as using the OpenTelemetry Java Agent, third-party starters, or the new Spring Boot Starter for OpenTelemetry. It emphasizes the importance of the OTLP protocol over specific libraries for seamless data export across metrics, traces, and logs. The blog also guides setting up metrics, traces, and logs export in a Spring Boot application, and showcases a sample project with services demonstrating OpenTelemetry's capabilities. Additionally, it highlights context propagation for tracing across services and provides configuration tips to maintain context in asynchronous tasks. The blog concludes by promoting Spring Boot's upcoming release that includes enhanced OpenTelemetry support and invites community feedback and contributions.
+👉 [Read more](https://spring.io/blog/2025/11/18/opentelemetry-with-spring-boot)
+
+## 🔹 Docker - Docker + Unsloth: Build Custom Models, Faster
+The blog post titled "Docker + Unsloth: Build Custom Models, Faster" discusses the challenges of building and running AI models locally, particularly with open-source Large Language Models (LLMs). Despite advancements, running these models on local machines remains challenging due to dependency issues, which can lead to a slow, fragile, and inconsistent experience. The article highlights two main aspects of this challenge: model creation and optimization, which involve making fine-tuning and quantization processes more efficient. Docker and Unsloth aim to address these challenges by providing solutions to streamline the development and deployment of custom models.
+👉 [Read more](https://www.docker.com/blog/docker-unsloth-build-custom-models-faster/)
+
+## 🔹 Java - JEP targeted to JDK 26: 524: PEM Encodings of Cryptographic Objects (Second Preview)
+The blog post discusses JEP 524, which is targeted for JDK 26 as a second preview. This JEP focuses on the use of PEM (Privacy-Enhanced Mail) encodings for cryptographic objects. The goal is to improve the handling and interoperability of cryptographic data by supporting PEM formats in the Java Development Kit. This enhancement will facilitate easier integration and management of cryptographic keys and certificates by providing a more standardized and widely-used encoding format. The post provides further details and insights into the potential benefits and implementation of this feature in JDK 26.
+👉 [Read more](https://inside.java/2025/11/17/jep524-target-jdk26/)
+
+## 🔹 Golang - Go’s Sweet 16
+The blog post titled "Go's Sweet 16" celebrates the 16th anniversary of the Go programming language. It highlights the progress and achievements of Go since its inception, including its growing community, widespread adoption, and the continuous improvements made to the language. The post expresses gratitude to the contributors and users who have helped shape Go into a reliable and efficient language for developers around the world. It also looks forward to the future developments and innovations in the Go ecosystem.
+👉 [Read more](https://go.dev/blog/16years)
+
